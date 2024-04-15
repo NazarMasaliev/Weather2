@@ -132,6 +132,9 @@ function PageWeather() {
                       <option value="Astana">
                         Astana
                       </option>
+                      <option>
+                        Almaty
+                      </option>
                     </select>
                   </div>
                 </div>
