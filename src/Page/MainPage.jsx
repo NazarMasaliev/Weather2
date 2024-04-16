@@ -221,7 +221,7 @@ function PageWeather() {
                                 <h5 className="mt-3 text-center">По часам</h5>
                                 <div className="hourlyInfo">
                                   <div className="row">
-                                    <div className="col-6 mt-5 pt-4 col-xs-12" style={{ textAlign: "right", paddingRight: "30px" }}>
+                                    <div className="col-8 mt-5 pt-4 col-xs-12" style={{ textAlign: "right", paddingRight: "30px" }}>
                                       <ul className="ulWeather">
                                         <li>Вермя: </li>
                                         <li>вероятность дождя:</li>
@@ -237,7 +237,7 @@ function PageWeather() {
                                         <li>Давление:</li>
                                       </ul>
                                     </div>
-                                    <div className="col-6 mt-2">
+                                    <div className="col-4 mt-2">
                                       <div style={{ overflowX: "scroll", overflowY: "hidden", height: "450px", width: "250px", display: "flex" }}>
                                         {i.hour.map(i =>
                                           <>
