@@ -6,7 +6,7 @@ function PageWeather() {
   function fromselect(fromoption) {
     setType(fromoption)
     WeatherF();
-    
+
   }
 
   const [weather, setWeather] = useState();
@@ -132,9 +132,6 @@ function PageWeather() {
                       <option value="Astana">
                         Astana
                       </option>
-                      <option>
-                        Almaty
-                      </option>
                     </select>
                   </div>
                 </div>
@@ -156,17 +153,12 @@ function PageWeather() {
                                 <div className="row p-0">
                                   <div className="col-12 pt-1 pb-1">Влажность:<br /><b>{i.day.avghumidity}</b></div>
                                   <div className="col-12 pt-1 pb-1">Средняя температура в C: <br /><b>{i.day.avgtemp_c}°C</b></div>
-                                  <div className="col-12 pt-1 pb-1">Средняя температура в F: <br /><b>{i.day.avgtemp_f}°C</b></div>
                                   <div className="col-12 pt-1 pb-1">Скорость ветра в км: <br /><b>{i.day.avgvis_km}</b></div>
-                                  <div className="col-12 pt-1 pb-1">Скорость ветра в мили: <br /><b>{i.day.avgvis_miles}</b></div>
                                   <div className="col-12 pt-1 pb-1">Веротяность дождя: <br /><b>{i.day.daily_chance_of_rain}</b></div>
                                   <div className="col-12 pt-1 pb-1">Вероятность снега: <br /><b>{i.day.daily_chance_of_snow}</b></div>
                                   <div className="col-12 pt-1 pb-1">Максимальная температура в C: <br /><b>{i.day.maxtemp_c}°C</b></div>
-                                  <div className="col-12 pt-1 pb-1">Максимальная температура в F: <br /><b>{i.day.maxtemp_f}</b></div>
                                   <div className="col-12 pt-1 pb-1">Максимальная скорость ветра в км: <br /><b>{i.day.maxwind_kph}</b></div>
-                                  <div className="col-12 pt-1 pb-1">Максимальная скорость ветра в мили: <br /><b>{i.day.maxwind_mph}</b></div>
                                   <div className="col-12 pt-1 pb-1">Минимальная температура в С: <br /><b>{i.day.mintemp_c}°C</b></div>
-                                  <div className="col-12 pt-1 pb-1">Минимальная температура в F: <br /><b>{i.day.mintemp_f}</b></div>
                                   <div className="col-12 pt-1 pb-1">Дождь:<br /><b>{i.day.daily_will_it_rain}</b></div>
                                   <div className="col-12 pt-1 pb-1">Снег:<br /><b>{i.day.daily_will_it_snow}</b></div>
                                   <div className="col-12 pt-1 pb-1">Количество осадков: <br /><b>{i.day.totalprecip_in}</b></div>
@@ -281,7 +273,7 @@ function PageWeather() {
                         </div>
                         <div className="col-sm-12 col-md-12 d-xl-none col-xl-12 mt-4 bg-dark text-white pt-3 pb-3 rounded">
                           <div className="row">
-                            <div className="col-8">
+                            <div className="col-8" style={{textAlign:"right"}}>
                               <b>Вермя: </b><br />
                               <b>вероятность дождя:</b><br />
                               <b>вероятность снега:</b><br />
