@@ -221,7 +221,7 @@ function PageWeather() {
                                 <h5 className="mt-3 text-center">По часам</h5>
                                 <div className="hourlyInfo">
                                   <div className="row">
-                                    <div className="col-8 mt-5 pt-4 col-xs-12" style={{ textAlign: "right", paddingRight: "30px" }}>
+                                    <div className="col-6 mt-5 pt-4 col-xs-12" style={{ textAlign: "right", paddingRight: "30px" }}>
                                       <ul className="ulWeather">
                                         <li>Вермя: </li>
                                         <li>вероятность дождя:</li>
@@ -237,7 +237,7 @@ function PageWeather() {
                                         <li>Давление:</li>
                                       </ul>
                                     </div>
-                                    <div className="col-4 mt-2">
+                                    <div className="col-6 mt-2">
                                       <div style={{ overflowX: "scroll", overflowY: "hidden", height: "450px", width: "250px", display: "flex" }}>
                                         {i.hour.map(i =>
                                           <>
@@ -273,7 +273,7 @@ function PageWeather() {
                         </div>
                         <div className="col-sm-12 col-md-12 d-xl-none col-xl-12 mt-4 bg-dark text-white pt-3 pb-3 rounded">
                           <div className="row">
-                            <div className="col-6" style={{textAlign:"right"}}>
+                            <div className="col-8" style={{textAlign:"right"}}>
                               <b>Вермя: </b><br />
                               <b>вероятность дождя:</b><br />
                               <b>вероятность снега:</b><br />
@@ -287,7 +287,7 @@ function PageWeather() {
                               <b>Осадки:</b><br />
                               <b>Давление:</b><br />
                             </div>
-                            <div className="col-6">
+                            <div className="col-4">
                               <div className="HourlyWeatherMedia d-flex">
                                 {i.hour.map(i =>
                                   <>
