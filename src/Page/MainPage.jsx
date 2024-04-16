@@ -273,7 +273,7 @@ function PageWeather() {
                         </div>
                         <div className="col-sm-12 col-md-12 d-xl-none col-xl-12 mt-4 bg-dark text-white pt-3 pb-3 rounded">
                           <div className="row">
-                            <div className="col-7" style={{textAlign:"right"}}>
+                            <div className="col-6" style={{textAlign:"right"}}>
                               <b>Вермя: </b><br />
                               <b>вероятность дождя:</b><br />
                               <b>вероятность снега:</b><br />
@@ -287,7 +287,7 @@ function PageWeather() {
                               <b>Осадки:</b><br />
                               <b>Давление:</b><br />
                             </div>
-                            <div className="col-5">
+                            <div className="col-6">
                               <div className="HourlyWeatherMedia d-flex">
                                 {i.hour.map(i =>
                                   <>
