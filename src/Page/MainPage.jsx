@@ -6,7 +6,7 @@ function PageWeather() {
   function fromselect(fromoption) {
     setType(fromoption)
     WeatherF();
-
+    
   }
 
   const [weather, setWeather] = useState();
@@ -79,9 +79,9 @@ function PageWeather() {
     }
   }
 
-  // useEffect(() => {
-  //   WeatherF();
-  // })
+  useEffect(() => {
+    WeatherF();
+  })
   return (
     <div className="container-fluid alldisplay">
       <div className="row p-0">
